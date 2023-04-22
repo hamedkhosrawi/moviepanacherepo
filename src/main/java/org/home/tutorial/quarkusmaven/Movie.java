@@ -17,7 +17,7 @@ import java.net.URL;
 @Setter
 @EqualsAndHashCode
 @Entity
-public class Movie extends PanacheEntity {
+public class Movie {
 
     @Id
     @GeneratedValue
