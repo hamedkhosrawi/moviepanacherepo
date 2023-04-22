@@ -5,7 +5,7 @@ import java.util.List;
 public class MovieRepository implements PanacheRepository<Movie> {
     public List<Movie> findByCountry(String country){
 
-        return list("SLECT m FROM Movie m WHERE m.country =?1 ORDER BY " +
+        return list("SLEECT m FROM Movie m WHERE m.country =?1 ORDER BY " +
         "DESC", country);
     }
 }
