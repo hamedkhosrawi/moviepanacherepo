@@ -1,4 +1,4 @@
-# quarkus-home
+# Movie API with POSTGRESDB
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
