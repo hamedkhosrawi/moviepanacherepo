@@ -13,9 +13,10 @@ import javax.validation.constraints.NotNull;
 import java.net.URL;
 
 @Schema(name = "Movie", description = "Movie Representation")
-@Getter
-@Setter
-@EqualsAndHashCode
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 public class Movie {
 

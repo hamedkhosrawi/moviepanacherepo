@@ -47,7 +47,7 @@ public class MovieResource {
         .orElse(Response.status(Response.Status.NOT_FOUND).build());
     }
 
-    
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("title/{title}")
@@ -69,15 +69,20 @@ public class MovieResource {
 
     @POST
     @Transactional
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response create(Movie movie){
         movieRepository.persist(movie);
+
         if (movieRepository.isPersistent(movie)) {
             return Response.ok(movie).build();
         }
         return Response.status(Status.BAD_REQUEST).build();
 
     }
-    
+
+
+
 
 }
 
