@@ -1,4 +1,4 @@
-package org.home.tutorial.quarkusmaven;
+package org.home;
 
 import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;
 import org.eclipse.microprofile.openapi.annotations.info.Info;

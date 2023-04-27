@@ -1,4 +1,4 @@
-package org.home.tutorial.quarkusmaven;
+package org.home;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
@@ -11,6 +11,8 @@ public class MovieRepository implements PanacheRepository<Movie> {
 
         return list("SLEECT m FROM Movie m WHERE m.country =?1 ORDER BY " +
         "DESC", country);
+
+
 
     }
 }
