@@ -1,6 +1,8 @@
-package org.home;
+package org.home.resource;
 
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.home.Movie;
+import org.home.MovieRepository;
 
 import javax.inject.Inject;
 import javax.transaction.Transactional;
