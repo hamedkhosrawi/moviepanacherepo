@@ -1,5 +1,6 @@
-package org.home;
+package org.home.entity;
 
+import org.home.entity.Movie;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

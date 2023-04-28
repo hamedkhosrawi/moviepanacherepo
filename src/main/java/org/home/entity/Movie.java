@@ -1,9 +1,7 @@
-package org.home;
+package org.home.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import lombok.*;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 import javax.persistence.Column;
@@ -11,14 +9,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
+
 import java.net.URL;
 
+@Schema(name = "Movie", description = "Movie Representation")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Entity
-public class MovieDTO {
+public class Movie {
+
     @Id
     @GeneratedValue
     @Column(length = 100)
@@ -40,4 +41,6 @@ public class MovieDTO {
     private URL officialSite;
     @Column(length = 100)
     public String language;
+
+
 }

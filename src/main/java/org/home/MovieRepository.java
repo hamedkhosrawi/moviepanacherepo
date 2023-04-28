@@ -1,6 +1,7 @@
 package org.home;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import org.home.entity.Movie;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;

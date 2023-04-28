@@ -1,6 +1,8 @@
-package org.home;
+package org.home.service;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.home.entity.Movie;
+import org.home.exception.MovieException;
 
 import javax.inject.Singleton;
 import java.util.ArrayList;

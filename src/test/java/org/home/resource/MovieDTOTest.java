@@ -1,5 +1,6 @@
-package org.home;
+package org.home.resource;
 
+import org.home.resource.MovieDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

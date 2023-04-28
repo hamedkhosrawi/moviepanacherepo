@@ -1,4 +1,4 @@
-package org.home;
+package org.home.exception;
 
 public class MovieException extends RuntimeException{
     public MovieException() {

@@ -1,5 +1,7 @@
-package org.home;
+package org.home.resource;
 
+
+import org.home.resource.MovieDTO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
