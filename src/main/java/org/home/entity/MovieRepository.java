@@ -1,4 +1,4 @@
-package org.home;
+package org.home.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import org.home.entity.Movie;
